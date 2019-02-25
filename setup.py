@@ -3,7 +3,7 @@ from os import path
 from io import open
 
 setup(
-    name='py3-openstudio-linux-sdk',
+    name='py3_openstudio_linux_sdk',
     version='2.7.0',
     description='OpenStudio python bindings.',
     long_description="""
@@ -21,7 +21,7 @@ setup(
         'Programming Language :: Python :: 3.7',
     ],
     keywords='openstudio py3 setuptools development',
-    packages=find_packages(include=['py3-openstudio-linux-sdk']),
+    packages=find_packages(include=['py3_openstudio_linux_sdk']),
     include_package_data=True,
     install_requires=[
         "pytest>=3.5.1",
