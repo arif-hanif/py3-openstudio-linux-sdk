@@ -12,17 +12,23 @@ Package the python bindings for openstudio for linux in python 3.
 - [ ] how to track versions with openstudio versions
 
 ## Installation
-comming soon
+This package is only built for linux.
+```
+pip install py3_openstudio_linux_sdk
+```
 
-## Example use
-comming soon
+## Example
 
-## Features
-comming soon
+```
+import py3_openstudio_linux_sdk as openstudio
 
-## Documentation
-comming soon
+model = openstudio.model.Model()
+space = openstudio.model.Space(model)
+space.setName("New Space")
 
+for s in openstudio.model.getSpaces(model):
+    print(s)
+```
 
 ### Credits
 
