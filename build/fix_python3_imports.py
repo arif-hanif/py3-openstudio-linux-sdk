@@ -13,7 +13,7 @@ re_import = re.compile(r'^import (openstudio.*?)( as .*)?$')
 re_from = re.compile(r'^from (openstudio.*?) import (.*)?$')
 
 pyfiles = [f for f in gb.glob(
-    "/python_wrapper/generated_sources/*.py") if not f.startswith('__')]
+    "./python_wrapper/generated_sources/*.py") if not f.startswith('__')]
 
 for line in fileinput.input(pyfiles, inplace=True, backup='.bak'):
     if 'import' in line:

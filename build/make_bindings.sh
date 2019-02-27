@@ -1,11 +1,18 @@
 #!/bin/bash
 
-make -j 2
+cmake \
+    -DBUILD_SHARED_LIBS=ON \
+    -DBUILD_OS_APP=OFF \
+    -DPYTHON_EXECUTABLE=/usr/bin/python3.6 \
+    -DBUILD_PYTHON_BINDINGS=ON \
+    ../openstudiocore
+
+make -j 4
 
 catchIddFactoryError() {
   make GenerateIddFactory
   make GenerateIddFactoryRun
-  make -j 2
+  make -j 4
 }
 
 trap "catchIddFactoryError" ERR

@@ -70,7 +70,12 @@ WORKDIR /OpenStudio/build
 COPY . .
 
 # configure cmake
-#RUN cmake -DBUILD_SHARED_LIBS=ON -DBUILD_OS_APP=OFF -DPYTHON_EXECUTABLE=/usr/bin/python3.6 -DBUILD_PYTHON_BINDINGS=ON ../openstudiocore
+#RUN cmake \
+#    -DBUILD_SHARED_LIBS=ON \
+#    -DBUILD_OS_APP=OFF \
+#    -DPYTHON_EXECUTABLE=/usr/bin/python3.6 \
+#    -DBUILD_PYTHON_BINDINGS=ON \
+#    ../openstudiocore
 
 # make and catch iddfactory error
 #RUN chmod +x ./make_bindings.sh
