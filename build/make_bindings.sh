@@ -7,19 +7,20 @@ cmake \
     -DBUILD_PYTHON_BINDINGS=ON \
     ../openstudiocore
 
+make GenerateIddFactoryRun
 make -j 4
 
-catchIddFactoryError() {
-  make GenerateIddFactory
-  make GenerateIddFactoryRun
-  make -j 4
-}
+#catchIddFactoryError() {
+#  make GenerateIddFactory
+#  make GenerateIddFactoryRun
+#  make -j 4
+#}
 
-trap "catchIddFactoryError" ERR
+#trap "catchIddFactoryError" ERR
 
-return
+#return
 
-catchIddFactoryError
+#catchIddFactoryError
 
 # Are static libraries required?
 cp ./Products/python/*.so ./python_wrapper/generated_sources
