@@ -21,4 +21,4 @@ for line in fileinput.input(pyfiles, inplace=True, backup='.bak'):
             line = re_import.sub(r'from .import \1\2', line)
         elif re_from.match(line):
             line = re_from.sub(r'from .\1 import \2', line)
-    print(line)
+    print(line, end='')
