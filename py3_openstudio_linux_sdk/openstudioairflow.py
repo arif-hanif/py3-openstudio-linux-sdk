@@ -164,31 +164,31 @@ SwigPyIterator_swigregister(SwigPyIterator)
 
 _openstudioairflow.SHARED_PTR_DISOWN_swigconstant(_openstudioairflow)
 SHARED_PTR_DISOWN = _openstudioairflow.SHARED_PTR_DISOWN
-import openstudioutilities
-import openstudioutilitiescore
-import openstudioutilitiestime
-import openstudioutilitiesdata
-import openstudioutilitiesunits
-import openstudioutilitiesplot
-import openstudioutilitiesgeometry
-import openstudioutilitiessql
-import openstudioutilitiesbcl
-import openstudioutilitiesidd
-import openstudioutilitiesidf
-import openstudioutilitiesfiletypes
-import openstudiomodel
-import openstudiomodelcore
-import openstudiomodelsimulation
-import openstudiomodelresources
-import openstudiomodelgeometry
-import openstudiomodelhvac
-import openstudiomodelzonehvac
-import openstudiomodelavailabilitymanager
-import openstudiomodelplantequipmentoperationscheme
-import openstudiomodelstraightcomponent
-import openstudiomodelairflow
-import openstudiomodelrefrigeration
-import openstudiomodelgenerators
+from .import openstudioutilities
+from .import openstudioutilitiescore
+from .import openstudioutilitiestime
+from .import openstudioutilitiesdata
+from .import openstudioutilitiesunits
+from .import openstudioutilitiesplot
+from .import openstudioutilitiesgeometry
+from .import openstudioutilitiessql
+from .import openstudioutilitiesbcl
+from .import openstudioutilitiesidd
+from .import openstudioutilitiesidf
+from .import openstudioutilitiesfiletypes
+from .import openstudiomodel
+from .import openstudiomodelcore
+from .import openstudiomodelsimulation
+from .import openstudiomodelresources
+from .import openstudiomodelgeometry
+from .import openstudiomodelhvac
+from .import openstudiomodelzonehvac
+from .import openstudiomodelavailabilitymanager
+from .import openstudiomodelplantequipmentoperationscheme
+from .import openstudiomodelstraightcomponent
+from .import openstudiomodelairflow
+from .import openstudiomodelrefrigeration
+from .import openstudiomodelgenerators
 class OptionalContamIndexModel(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, OptionalContamIndexModel, name, value)

@@ -164,19 +164,19 @@ SwigPyIterator_swigregister(SwigPyIterator)
 
 _openstudioenergyplus.SHARED_PTR_DISOWN_swigconstant(_openstudioenergyplus)
 SHARED_PTR_DISOWN = _openstudioenergyplus.SHARED_PTR_DISOWN
-import openstudioutilities
-import openstudioutilitiescore
-import openstudioutilitiestime
-import openstudioutilitiesdata
-import openstudioutilitiesunits
-import openstudioutilitiesplot
-import openstudioutilitiesgeometry
-import openstudioutilitiessql
-import openstudioutilitiesbcl
-import openstudioutilitiesidd
-import openstudioutilitiesidf
-import openstudioutilitiesfiletypes
-import openstudiomodel
+from .import openstudioutilities
+from .import openstudioutilitiescore
+from .import openstudioutilitiestime
+from .import openstudioutilitiesdata
+from .import openstudioutilitiesunits
+from .import openstudioutilitiesplot
+from .import openstudioutilitiesgeometry
+from .import openstudioutilitiessql
+from .import openstudioutilitiesbcl
+from .import openstudioutilitiesidd
+from .import openstudioutilitiesidf
+from .import openstudioutilitiesfiletypes
+from .import openstudiomodel
 class ErrorLevel(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, ErrorLevel, name, value)
