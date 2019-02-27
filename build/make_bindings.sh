@@ -21,6 +21,8 @@ return
 
 catchIddFactoryError
 
+# Are static libraries required?
 cp ./Products/python/*.so ./python_wrapper/generated_sources
+cp ./__init__.py ./python_wrapper/generated_sources/__init__.py
 
 python3 ./fix_python3_imports.py
