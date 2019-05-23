@@ -36,7 +36,7 @@ model = openstudio.model.Model.load(osmpath).get()
 ```
 
 ## Troubleshooting
-### ImportError: libopenstudio_airflow_static.so: cannot open shared object file: No such file or directory
+#### 1. ImportError: libopenstudio_airflow_static.so: cannot open shared object file: No such file or directory
 Ensure you are using Python 3.6 and add the python bindings path to the LD_LIBRARY_PATH environmental variable in linux: 
 ```
 export LD_LIBRARY_PATH=/usr/src/openstudio:$LD_LIBRARY_PATH
