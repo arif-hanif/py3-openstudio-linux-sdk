@@ -22,12 +22,24 @@ pip install py3_openstudio_linux_sdk
 ```
 import py3_openstudio_linux_sdk as openstudio
 
+# Generate an osm model
 model = openstudio.model.Model()
 space = openstudio.model.Space(model)
 space.setName("New Space")
 
 for s in openstudio.model.getSpaces(model):
     print(s)
+    
+# Load a osm model
+osmpath = openstudio.toPath("/path/to/osm/in.osm")
+model = openstudio.model.Model.load(osmpath).get()
+```
+
+## Troubleshooting
+### ImportError: libopenstudio_airflow_static.so: cannot open shared object file: No such file or directory
+Ensure you are using Python 3.6 and add the python bindings path to the LD_LIBRARY_PATH environmental variable in linux: 
+```
+export LD_LIBRARY_PATH=/usr/src/openstudio:$LD_LIBRARY_PATH
 ```
 
 ### Credits
